@@ -763,8 +763,9 @@ GameObject:
   - component: {fileID: 920613651}
   - component: {fileID: 920613650}
   - component: {fileID: 920613649}
+  - component: {fileID: 920613652}
   m_Layer: 0
-  m_Name: chebe
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,7 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2050f9f2c3c1ac84380ec90db9b3dab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.01
 --- !u!212 &920613650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -852,6 +853,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 45.07, y: 43.179, z: 0}
+--- !u!95 &920613652
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920613648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e2d07c362a400441a11b8d8632b6487, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &927673755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1291,7 @@ GameObject:
   - component: {fileID: 1572803348}
   - component: {fileID: 1572803349}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: RigidBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
